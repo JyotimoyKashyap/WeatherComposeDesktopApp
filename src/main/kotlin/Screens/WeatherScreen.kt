@@ -103,8 +103,7 @@ fun WeatherScreen(currentWeatherResponse: CurrentWeatherResponse?){
                     )
                 ){
                     Text(
-                        // TODO : Change the 22°C to " " value
-                        text = if(currentWeatherResponse?.current?.feelslike_c == null) "22°C"
+                        text = if(currentWeatherResponse?.current?.feelslike_c == null) " "
                         else currentWeatherResponse.current.feelslike_c.toInt().toString() + "°C",
                         fontSize = 40.sp,
                         fontWeight = FontWeight.Bold,
